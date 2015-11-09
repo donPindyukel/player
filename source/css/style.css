@@ -1,0 +1,276 @@
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.center-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.center-wrapper .player-wrapper {
+  max-width: 640px;
+  min-width: 320px;
+  height: 1050px;
+  margin: auto;
+  background: #2f2f2f;
+}
+
+.header {
+  height: 90px;
+  background: -webkit-linear-gradient(bottom, #2f2f2f 50%, #363636 50%);
+  background: linear-gradient(to top, #2f2f2f 50%, #363636 50%);
+  text-align: center;
+  padding-top: 2%;
+}
+
+.header-agelimit {
+  height: 65px;
+  width: 65px;
+  background: url("../img/agelimit.png") center no-repeat;
+  background-size: contain;
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+}
+
+.player-name {
+  height: 65px;
+  width: 250px;
+  background: url("../img/videoTube.png") center no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 10%;
+}
+
+.player-display-screen {
+  height: 670px;
+  border: 2px solid black;
+  background: url("../img/spanch.png") center no-repeat;
+  background-size: cover;
+}
+
+.player-display-screen .player-screen-header {
+  height: 105px;
+  padding-top: 3%;
+  background: -webkit-linear-gradient(top, #000000 0%, #000000 34%, rgba(0, 0, 0, 0.52) 99%, rgba(0, 0, 0, 0.52) 100%);
+  background: linear-gradient(to bottom, #000000 0%, #000000 34%, rgba(0, 0, 0, 0.52) 99%, rgba(0, 0, 0, 0.52) 100%);
+}
+
+.player-display-screen .player-screen-header p {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+  display: inline-block;
+  margin-left: 6%;
+}
+
+.player-display-screen .player-screen-header .clock,
+.player-display-screen .player-screen-header .share {
+  height: 60px;
+  width: 60px;
+  background: url("../img/clock.png") center no-repeat;
+  background-size: contain;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+
+.player-display-screen .player-screen-header .clock {
+  background: url("../img/clock.png") center no-repeat;
+  margin-right: 2%;
+}
+
+.player-display-screen .player-screen-header .share {
+  background: url("../img/share.png") center no-repeat;
+  margin-right: 6%;
+}
+
+.center-player-display {
+  margin: 32% auto;
+  text-align: center;
+}
+
+.button {
+  height: 195px;
+  max-width: 445px;
+  margin: auto;
+  background: url("../img/play.png") center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.cancel {
+  width: 140px;
+  height: 55px;
+  background: #12151c;
+  opacity: 0.5;
+  border-radius: 10px;
+  font-size: 28px;
+  color: white;
+  outline: none;
+}
+
+.viewers {
+  font-size: 24px;
+  color: #bababa;
+  margin-bottom: 40px;
+}
+
+.player-display-control-panel {
+  height: 105px;
+  background: black;
+  padding-top: 10px;
+}
+
+.player-display-control-panel .progress-indicator {
+  height: 8px;
+  width: 98%;
+  background: #626262;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.player-display-control-panel .progress-indicator:before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 30%;
+  background: #f20425;
+  border-radius: 5px 0 0 5px;
+}
+
+.controls {
+  padding: 3% 5%;
+}
+
+.controls .controls-play,
+.controls .controls-mute,
+.controls .controls-fullscreen {
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.controls .controls-play {
+  margin-right: 8%;
+  background: url("../img/controls-play.png") center no-repeat;
+}
+
+.controls .controls-mute {
+  margin-right: 10%;
+  background: url("../img/controls-mute.png") center no-repeat;
+}
+
+.controls .controls-fullscreen {
+  float: right;
+  background: url("../img/controls-fullscreen.png") center no-repeat;
+}
+
+.controls .time-wrap {
+  display: inline-block;
+  vertical-align: 100%;
+}
+
+.controls .time-wrap p {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.controls .time-wrap p span {
+  color: #bababa;
+}
+
+.agreement {
+  max-width: 495px;
+  margin-left: 5%;
+}
+
+label[for="check"] p {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: #a4a4a4;
+  font-size: 24px;
+  line-height: 24px;
+  max-width: 430px;
+  display: inline-block;
+  padding-top: 3%;
+}
+
+label[for="check"] p a {
+  color: white;
+}
+
+label:before {
+  content: " ";
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background: white;
+  border: 1px solid black;
+  margin-right: 3%;
+  margin-top: 3%;
+  vertical-align: top;
+}
+
+input[type=checkbox]:checked + label:before {
+  background: url("../img/checkbox.png");
+}
+
+.price {
+  margin: 0;
+  padding: 0;
+  color: #a4a4a4;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 4% 7%;
+}
+/*текст в хеадере*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+/*текст в хеадере*/

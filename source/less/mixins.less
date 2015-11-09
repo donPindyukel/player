@@ -1,0 +1,60 @@
+@import (reference) "player.less";
+
+
+//обнуление отступов
+.zero (){
+	margin:0;
+	padding:0;
+}
+
+//обнуление списков и уход от стилизации
+.zero-ul (@name_ul){
+	@{name_ul}{
+	   .zero();
+	   list-style: none;
+	   li{
+		 .zero();
+       }	
+    }
+}
+
+//кнопка из ссылки
+.link_to_btn(@pad_top_btn;
+             @radius_btn; 
+             @color_btn; 
+             @up_clr_btn;
+             @dwn_clr_btn; 
+             @text_clr; 
+             @width_btn; 
+             @mode;
+             @font; 
+             @f-size;
+             @f-height; 
+             @f-weight;){
+	text-decoration: none;
+	display:block;
+	height: 50px;
+	text-align: center;
+	padding-top: @pad_top_btn;
+	border-radius: @radius_btn;
+	background: @color_btn; /* Для старых браузров */
+    background: linear-gradient(@mode, @up_clr_btn, @dwn_clr_btn);
+    width: @width_btn;
+    .font-style(@font; @f-size; @f-height; @f-weight; @text_clr;) ;
+
+
+}
+
+//==============сеточный миксины===================
+.column(@column){
+	width: @content-width/@max-column*@column;
+}
+
+.clearfix(){
+	content:'';
+	display:table;
+	clear: both;
+}
+
+
+
