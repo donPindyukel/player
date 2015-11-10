@@ -31,21 +31,21 @@ body {
 .center-wrapper .player-wrapper {
   max-width: 640px;
   min-width: 320px;
-  height: 1050px;
+  height: 100vh;
   margin: auto;
   background: #2f2f2f;
 }
 
 .header {
-  height: 90px;
+  height: 6vh;
   background: -webkit-linear-gradient(bottom, #2f2f2f 50%, #363636 50%);
   background: linear-gradient(to top, #2f2f2f 50%, #363636 50%);
   text-align: center;
-  padding-top: 2%;
+  padding-top: 1%;
 }
 
 .header-agelimit {
-  height: 65px;
+  height: 5vh;
   width: 65px;
   background: url("../img/agelimit.png") center no-repeat;
   background-size: contain;
@@ -55,43 +55,47 @@ body {
 }
 
 .player-name {
-  height: 65px;
-  width: 250px;
+  height: 5vh;
+  width: 40vw;
   background: url("../img/videoTube.png") center no-repeat;
   background-size: contain;
   display: inline-block;
   margin-right: 10%;
 }
 
+@media screen and (min-width: 1245px) and (max-width: 2000px) {
+  .player-name {
+    width: 30vh;
+  }
+}
+
 .player-display-screen {
-  height: 670px;
+  max-height: 67vh;
   border: 2px solid black;
   background: url("../img/spanch.png") center no-repeat;
   background-size: cover;
 }
 
 .player-display-screen .player-screen-header {
-  height: 105px;
-  padding-top: 3%;
+  height: 6vh;
+  padding-top: 1%;
   background: -webkit-linear-gradient(top, #000000 0%, #000000 34%, rgba(0, 0, 0, 0.52) 99%, rgba(0, 0, 0, 0.52) 100%);
   background: linear-gradient(to bottom, #000000 0%, #000000 34%, rgba(0, 0, 0, 0.52) 99%, rgba(0, 0, 0, 0.52) 100%);
 }
 
 .player-display-screen .player-screen-header p {
-  font-size: 36px;
+  font-size: 2.7vh;
   margin: 0;
   padding: 0;
-  line-height: 60px;
+  line-height: 4vh;
   display: inline-block;
   margin-left: 6%;
 }
 
 .player-display-screen .player-screen-header .clock,
 .player-display-screen .player-screen-header .share {
-  height: 60px;
-  width: 60px;
-  background: url("../img/clock.png") center no-repeat;
-  background-size: contain;
+  height: 4vh;
+  width: 10%;
   display: inline-block;
   cursor: pointer;
   float: right;
@@ -99,53 +103,54 @@ body {
 
 .player-display-screen .player-screen-header .clock {
   background: url("../img/clock.png") center no-repeat;
-  margin-right: 2%;
+  background-size: contain;
+  margin-right: 0%;
 }
 
 .player-display-screen .player-screen-header .share {
   background: url("../img/share.png") center no-repeat;
+  background-size: contain;
   margin-right: 6%;
 }
 
 .center-player-display {
-  margin: 32% auto;
+  margin: 22vh auto;
   text-align: center;
 }
 
 .button {
-  height: 195px;
+  height: 15vh;
   max-width: 445px;
   margin: auto;
-  background: url("../img/play.png") center no-repeat;
+  background: url("../img/play-blackwhite.png") center no-repeat;
   background-size: contain;
-  cursor: pointer;
 }
 
 .cancel {
   width: 140px;
-  height: 55px;
+  height: 6vh;
   background: #12151c;
   opacity: 0.5;
   border-radius: 10px;
-  font-size: 28px;
+  font-size: 3vh;
   color: white;
   outline: none;
 }
 
 .viewers {
-  font-size: 24px;
+  font-size: 2vh;
   color: #bababa;
-  margin-bottom: 40px;
+  margin-bottom: 3vh;
 }
 
 .player-display-control-panel {
-  height: 105px;
+  height: 10vh;
   background: black;
   padding-top: 10px;
 }
 
 .player-display-control-panel .progress-indicator {
-  height: 8px;
+  height: 1vh;
   width: 98%;
   background: #626262;
   margin: auto;
@@ -156,21 +161,21 @@ body {
 .player-display-control-panel .progress-indicator:before {
   content: "";
   display: block;
-  height: 8px;
+  height: 1vh;
   width: 30%;
   background: #f20425;
   border-radius: 5px 0 0 5px;
 }
 
 .controls {
-  padding: 3% 5%;
+  padding: 1.5vh 5%;
 }
 
 .controls .controls-play,
 .controls .controls-mute,
 .controls .controls-fullscreen {
-  width: 45px;
-  height: 45px;
+  width: 4vh;
+  height: 4vh;
   background-size: contain;
   display: inline-block;
   cursor: pointer;
@@ -179,25 +184,28 @@ body {
 .controls .controls-play {
   margin-right: 8%;
   background: url("../img/controls-play.png") center no-repeat;
+  background-size: contain;
 }
 
 .controls .controls-mute {
   margin-right: 10%;
   background: url("../img/controls-mute.png") center no-repeat;
+  background-size: contain;
 }
 
 .controls .controls-fullscreen {
   float: right;
   background: url("../img/controls-fullscreen.png") center no-repeat;
+  background-size: contain;
 }
 
 .controls .time-wrap {
   display: inline-block;
-  vertical-align: 100%;
+  vertical-align: 1vh;
 }
 
 .controls .time-wrap p {
-  font-size: 24px;
+  font-size: 3vh;
   color: white;
   margin: 0;
   padding: 0;
@@ -207,9 +215,13 @@ body {
   color: #bababa;
 }
 
+.footer {
+  background: #2f2f2f;
+}
+
 .agreement {
-  max-width: 495px;
-  margin-left: 5%;
+  margin-left: 4vw;
+  margin-bottom: 1vh;
 }
 
 label[for="check"] p {
@@ -217,11 +229,17 @@ label[for="check"] p {
   padding: 0;
   cursor: pointer;
   color: #a4a4a4;
-  font-size: 24px;
-  line-height: 24px;
-  max-width: 430px;
+  font-size: 2vh;
+  line-height: 2.6vh;
+  max-width: 500px;
   display: inline-block;
-  padding-top: 3%;
+  padding-top: 1vh;
+}
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  label[for="check"] p {
+    max-width: 250px;
+  }
 }
 
 label[for="check"] p a {
@@ -231,26 +249,33 @@ label[for="check"] p a {
 label:before {
   content: " ";
   display: inline-block;
-  width: 37px;
-  height: 37px;
+  width: 3vh;
+  height: 3vh;
   background: white;
-  border: 1px solid black;
-  margin-right: 3%;
-  margin-top: 3%;
+  border: 0.3vh solid black;
+  margin-right: 1vh;
+  margin-top: 2vh;
   vertical-align: top;
 }
 
 input[type=checkbox]:checked + label:before {
   background: url("../img/checkbox.png");
+  background-size: contain;
 }
 
 .price {
   margin: 0;
   padding: 0;
   color: #a4a4a4;
-  font-size: 24px;
-  line-height: 24px;
-  padding: 4% 7%;
+  font-size: 2vh;
+  line-height: 2.6vh;
+  padding: 0vh 5vw;
+}
+
+@media screen and (min-width: 759px) and (max-width: 2000px) {
+  .price {
+    padding: 0vh 3vw;
+  }
 }
 /*текст в хеадере*/
 
